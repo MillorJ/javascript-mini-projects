@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Table Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Contacts</h1>
+
+    <div id="form-container">
+        <h2 id="formHeader">Add Contact</h2>
+        <div name="formInputs" id="formInputs">
+            <form id="contactForm">
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" required /> <br />
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" required /> <br />
+                <label for="emailAddress">Email Address: </label>
+                <input type="email" name="emailAddress" id="emailAddress" required /> <br />
+                <label for="contactNumber">Contact Number: </label>
+                <input type="tel" name="contactNumber" id="contactNumber" required /> <br />
+            
+                <button id="submitForm">Add Contact</button>  
+            </form>
+            <p id="result"></p>
+        </div>
+    </div>
+    <div id="tableDiv">
+        <table>
+            <thead>
+                <tr>
+                    <th class="cell">Last Name</th>
+                    <th class="cell">First Name</th>
+                    <th class="cell">Email Address</th>
+                    <th class="cell">Contact Number</th>
+                    <th class="cell">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
